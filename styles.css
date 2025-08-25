@@ -1,5 +1,3 @@
-Here’s the full **styles.css** file you can copy-paste directly:
-
 ```css
 /* =========================
    Eco Vista Tours Styles
@@ -161,7 +159,7 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
-  transition: background var(--transition-speed);
+  transition:    var(--transition-speed);
 }
 
 form button:hover {
