@@ -28,7 +28,7 @@ body {
 /* Header */
 header {
   width: 100%;
-  background: linear-gradient(90deg, var(--primary-green), var(--primary-blue));
+  background-color: var(--primary-green);
   color: white;
   padding: 1rem 2rem;
   position: fixed;
@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--dark);
+  color: var(--primary-blue);
 }
 
 /* Hero Section */
@@ -84,7 +84,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+   background-color: var(--primary-blue),
               url('https://picsum.photos/1920/1080?random=1') center/cover;
   color: white;
   padding: 2rem;
@@ -180,7 +180,7 @@ form input:focus, form textarea:focus {
 }
 
 form button {
-  background: linear-gradient(90deg, var(--primary-green), var(--primary-blue));
+  background-color: var(--primary-green);
   color: white;
   border: none;
   cursor: pointer;
@@ -189,6 +189,7 @@ form button {
 
 form button:hover {
   opacity: 0.9;
+  background-color: var(--primary-blue);
 }
 
 /* Footer */
