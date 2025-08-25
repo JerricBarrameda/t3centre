@@ -22,6 +22,7 @@ body {
   color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -37,12 +38,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 header h1 {
   font-size: 1.5rem;
   font-weight: 600;
+  flex-shrink: 0;
 }
 
 .nav-toggle {
@@ -52,12 +55,15 @@ header h1 {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul li a {
@@ -88,10 +94,16 @@ nav ul li a:hover {
 .hero h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s forwards 0.3s;
 }
 
 .hero p {
   font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s forwards 0.5s;
 }
 
 /* Sections */
@@ -104,6 +116,9 @@ section h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
   color: var(--primary-blue);
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s forwards;
 }
 
 .cards {
@@ -118,6 +133,8 @@ section h2 {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .card img {
@@ -189,6 +206,11 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .hero h2 { font-size: 2.5rem; }
@@ -197,9 +219,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header { flex-direction: column; align-items: flex-start; }
+  header { flex-direction: row; align-items: center; }
   .nav-toggle { display: block; }
-  nav ul { flex-direction: column; width: 100%; display: none; }
+  nav ul { flex-direction: column; width: 100%; display: none; margin-left: 0; }
   nav ul.active { display: flex; }
   .hero h2 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
