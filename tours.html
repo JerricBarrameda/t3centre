@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Tour Packages</title>
+  <link rel="stylesheet" href="tours.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">T3 Centre Tours</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html" class="active">Tours</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Discover Our Tour Packages 🌍</h2>
+      <p>Find the perfect adventure designed to fit every traveler’s dream.</p>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="packages container">
+    <h2 class="section-title">Featured Tours</h2>
+    <div class="package-grid">
+      
+      <!-- Package Card -->
+      <div class="card scroll-animate">
+        <img src="https://picsum.photos/400/250?random=1" alt="Tour 1">
+        <div class="card-body">
+          <h3>Boracay Escape</h3>
+          <p>3 days & 2 nights with island hopping, beach activities, and sunsets.</p>
+          <span class="price">$299</span>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Package Card -->
+      <div class="card scroll-animate">
+        <img src="https://picsum.photos/400/250?random=2" alt="Tour 2">
+        <div class="card-body">
+          <h3>Palawan Adventure</h3>
+          <p>4 days & 3 nights exploring lagoons, caves, and pristine beaches.</p>
+          <span class="price">$399</span>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Package Card -->
+      <div class="card scroll-animate">
+        <img src="https://picsum.photos/400/250?random=3" alt="Tour 3">
+        <div class="card-body">
+          <h3>Bohol Countryside</h3>
+          <p>2 days tour featuring Chocolate Hills, Tarsiers, and Loboc River Cruise.</p>
+          <span class="price">$199</span>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section class="about container" id="about">
+  <h2 class="section-title">About Us</h2>
+  <div class="about-content">
+    <p>
+      At T3 Centre Tours, we believe travel should be more than just visiting destinations — it’s about creating meaningful experiences and memories.  
+      Our mission is to connect you with the beauty of the Philippines through carefully curated packages, stress-free booking, and unforgettable adventures. 🌴
+    </p>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <p>&copy; 2025 T3 Centre Tours. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll animation JS -->
+  <script>
+    const animElements = document.querySelectorAll(".scroll-animate");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    animElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
