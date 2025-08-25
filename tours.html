@@ -7,87 +7,110 @@
   <link rel="stylesheet" href="tours.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">T3 Centre Tours</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tours.html" class="active">Tours</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- Header / Navbar -->
+  <header>
+    <h1>T3 Trips Tickets & Tours</h1>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="tours.html" class="active">Tours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-content">
+    <div>
       <h2>Discover Our Tour Packages 🌍</h2>
       <p>Find the perfect adventure designed to fit every traveler’s dream.</p>
     </div>
   </section>
 
-  <!-- Packages -->
-  <section class="packages container">
-    <h2 class="section-title">Featured Tours</h2>
-    <div class="package-grid">
-      
-      <!-- Package Card -->
-      <div class="card scroll-animate">
-        <img src="https://picsum.photos/400/250?random=1" alt="Tour 1">
-        <div class="card-body">
-          <h3>Boracay Escape</h3>
-          <p>3 days & 2 nights with island hopping, beach activities, and sunsets.</p>
-          <span class="price">$299</span>
-          <a href="#" class="btn">Book Now</a>
-        </div>
+  <!-- About Section -->
+  <section>
+    <div class="about-card">
+      <h2>Why Travel With Us</h2>
+      <p>We design unforgettable adventures with friendly guides, comfortable transport, and eco-conscious practices.</p>
+    </div>
+  </section>
+
+  <!-- Tour Packages -->
+  <section>
+    <h2>Featured Tours</h2>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="images/tour1.jpg" alt="Tour 1">
+        <h3>Tikim & Timpla: Bacolod Food Crawl</h3>
+        <p>Enjoy a day of tasting, making, and discovering the soulful heart of Negros.</p>
+        <a href="tikim.html" class="btn">Book Now</a>
       </div>
 
-      <!-- Package Card -->
-      <div class="card scroll-animate">
-        <img src="https://picsum.photos/400/250?random=2" alt="Tour 2">
-        <div class="card-body">
-          <h3>Palawan Adventure</h3>
-          <p>4 days & 3 nights exploring lagoons, caves, and pristine beaches.</p>
-          <span class="price">$399</span>
-          <a href="#" class="btn">Book Now</a>
-        </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="images/tour2.jpg" alt="Tour 2">
+        <h3>Palawan Adventure</h3>
+        <p>4 days & 3 nights exploring lagoons, caves, and pristine beaches.</p>
+        <a href="tour2.html" class="btn">Book Now</a>
       </div>
 
-      <!-- Package Card -->
-      <div class="card scroll-animate">
-        <img src="https://picsum.photos/400/250?random=3" alt="Tour 3">
-        <div class="card-body">
-          <h3>Bohol Countryside</h3>
-          <p>2 days tour featuring Chocolate Hills, Tarsiers, and Loboc River Cruise.</p>
-          <span class="price">$199</span>
-          <a href="#" class="btn">Book Now</a>
-        </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="images/tour3.jpg" alt="Tour 3">
+        <h3>Bohol Countryside</h3>
+        <p>2-day tour featuring Chocolate Hills, Tarsiers, and Loboc River Cruise.</p>
+        <a href="tour3.html" class="btn">Book Now</a>
       </div>
 
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="images/tour4.jpg" alt="Tour 4">
+        <h3>Cebu Island Hopping</h3>
+        <p>Experience pristine beaches, snorkeling, and private island tours.</p>
+        <a href="tour4.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="images/tour5.jpg" alt="Tour 5">
+        <h3>Davao Nature & Culture</h3>
+        <p>Discover waterfalls, eco parks, and local culture in Davao.</p>
+        <a href="tour5.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="images/tour6.jpg" alt="Tour 6">
+        <h3>Siargao Surf & Chill</h3>
+        <p>Surfing, island hopping, and relaxing in the tropical paradise.</p>
+        <a href="tour6.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <img src="images/tour7.jpg" alt="Tour 7">
+        <h3>Coron Adventure</h3>
+        <p>Sunken ship diving, lagoons, and scenic island views for 3 days.</p>
+        <a href="tour7.html" class="btn">Book Now</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer" id="contact">
-    <p>&copy; 2025 T3 Centre Tours. All rights reserved.</p>
+  <footer id="contact">
+    <p>&copy; 2025 EcoVista Tours. All rights reserved.</p>
   </footer>
 
-  <!-- Scroll animation JS -->
   <script>
-    const animElements = document.querySelectorAll(".scroll-animate");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    }, { threshold: 0.2 });
-
-    animElements.forEach(el => observer.observe(el));
+    // Navbar toggle for mobile
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
