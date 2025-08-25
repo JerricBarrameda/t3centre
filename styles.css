@@ -84,7 +84,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-   background-color: var(--primary-blue),
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
               url('https://picsum.photos/1920/1080?random=1') center/cover;
   color: white;
   padding: 2rem;
