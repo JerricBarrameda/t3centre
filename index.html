@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco Vista Tours</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Eco Vista Tours</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div>
+      <h2>Explore Nature with Us</h2>
+      <p>Discover breathtaking landscapes and unique adventures with Eco Vista Tours.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="max-width: 700px; margin: 0 auto; text-align: center;">
+      At Eco Vista Tours, we believe travel should connect you with the beauty of the Earth. 
+      Our tours are designed to inspire, refresh, and open your heart to nature’s wonders.
+    </p>
+  </section>
+
+  <!-- Tours Section -->
+  <section id="tours">
+    <h2>Our Tours</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=2" alt="Tour 1" />
+        <h3>Mountain Adventure</h3>
+        <p>Climb scenic trails and take in the panoramic views of untouched landscapes.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=3" alt="Tour 2" />
+        <h3>Beach Escape</h3>
+        <p>Relax on pristine shores with crystal clear waters and calming ocean breezes.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=4" alt="Tour 3" />
+        <h3>Forest Retreat</h3>
+        <p>Immerse yourself in the quiet magic of lush green forests and hidden paths.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Eco Vista Tours. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
