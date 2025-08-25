@@ -132,7 +132,7 @@ section h2 {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(50px);
 }
@@ -154,8 +154,8 @@ section h2 {
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Contact Form */

@@ -137,7 +137,11 @@ body {
 
 .about {
   margin: 3rem 0;
-  text-align: center;
+  text-align: center;       /* centers text */
+  display: flex;            /* centers content block */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about-content {
@@ -146,4 +150,6 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #444;
+  text-align: center;       /* makes sure paragraph text is centered */
 }
+
