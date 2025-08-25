@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>T3 Trips Tickets & Tours Centre</title>
+  <title>T3 Trips Tickets & Tours</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -11,6 +11,7 @@
   <!-- Header -->
   <header>
     <h1>T3 Trips Tickets & Tours</h1>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
     <nav>
       <ul>
         <li><a href="#hero">Home</a></li>
@@ -33,12 +34,7 @@
   <section id="about">
     <h2>About Us</h2>
     <p style="max-width: 700px; margin: 0 auto; text-align: center;">
-      T3 Trips Tickets & Tours Centre is a Department of Tourism (DOT) 
-      accredited travel agency that operates tours in and around Bacolod, 
-      Iloilo & Guimaras. We offer packages for incentive & educational tours, 
-      field trips, LGU programs, and transportation rentals. It is our business 
-      where you sleep, eat, learn and have fun. Feel free to explore our site or contact us at 
-      t3centre@yahoo.com.
+      T3 Trips Tickets & Tours Centre is a Department of Tourism (DOT) accredited travel agency that operates tours in and around Bacolod, Iloilo & Guimaras. We offer packages for incentive & educational tours, field trips, LGU programs, and transportation rentals. It is our business where you sleep, eat, learn and have fun. Feel free to explore our site or contact us at t3centre@yahoo.com.
     </p>
   </section>
 
@@ -80,7 +76,7 @@
     <p>&copy; 2025 Eco Vista Tours. All rights reserved.</p>
   </footer>
 
-  <!-- Optional JavaScript -->
+  <!-- JavaScript -->
   <script>
     // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -91,6 +87,12 @@
         });
       });
     });
+
+    // Mobile nav toggle
+    function toggleNav() {
+      const nav = document.querySelector('nav ul');
+      nav.classList.toggle('active');
+    }
   </script>
 </body>
 </html>
