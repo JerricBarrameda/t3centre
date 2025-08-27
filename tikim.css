@@ -66,6 +66,7 @@ nav ul {
 }
 
 nav ul li a {
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -100,6 +101,7 @@ nav ul li a.acti {
 }
 
 .hero-content {
+  margin-top: 5rem;
   position: relative;
   z-index: 1;
   padding: 0 1rem;

@@ -70,6 +70,7 @@ nav ul {
 }
 
 nav ul li a {
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -125,10 +126,13 @@ section h2 {
    Packages / Cards
 ========================= */
 .cards, .package-grid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem; /* increased spacing */
-  margin-bottom: 3rem;
+  gap: 2rem;
 }
 
 .card {
