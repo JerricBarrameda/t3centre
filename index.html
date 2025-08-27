@@ -72,15 +72,34 @@ site or contact us at t3centre@yahoo.com.
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us 📩</h2>
+    <p>Send us a message and we’ll get back to you as soon as possible.</p>
+
+    <form action="https://formspree.io/f/mqadkwrj" method="POST" enctype="multipart/form-data" class="contact-form">
+      <!-- Name -->
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <!-- Number -->
+      <label for="name">Your Mobile Number</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <!-- Email -->
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <!-- Message -->
+      <label for="message">What would you like to know?</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Send Message</button>
     </form>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
