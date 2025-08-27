@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tikim & Timpla — T3 Centre Tours</title>
+  <link rel="stylesheet" href="tourdetails.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>T3 Centre Tours</h1>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tours.html" class="active">Tours</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Tracing the Taste: Pond to Plate, Soil to Soul (EB Magalona and Silay)</h2>
+      <p>Immerse in real-life stories of sustainable food production, from aquaculture in EB Magalona to organic farming in Silay; where good food begins at the source.</p>
+    </div>
+  </section>
+
+  <!-- Tour Description -->
+  <section class="tour-description container">
+
+    <div class="tour-card">
+      <div class="tour-images">
+        <img src="images/tour1.jpg" alt="Food tasting">
+        <img src="images/tour1.jpg" alt="Craft workshop">
+        <img src="images/tour1.jpg" alt="Dinner experience">
+      </div>
+      <div class="tour-text">
+        <h3>Tour Highlights</h3>
+        <p>
+          Take the road less traveled (literally) and take part in a sustainable 
+          aquaculture experience at 7 Hectares. EB Magalona is where Kiko Torno’s fishponds are. 
+          Lunch, a gem of a taste workshop, includes a light lecture on the sustainability of a pond’s ecosystem.
+        </p>
+        <p>
+          <strong>Itinerary:</strong><br><br>
+        9:00	Pick up Hotel<br><br>
+        10:00	ETA 7 Hectares<br><br>
+        Meet Kiko Torno and let him take you to world of sustainable pond growing. 
+        Take time savoring the curated lunch. Activities will include harvesting and food preparation.<br><br>
+        2:00	Leave for Silay<br><br>
+        2:30	ETA Silay<br><br>
+        Visit Fresh Start, a pioneer in organic agriculture in Negros, 
+        Fresh Start Farm promotes healthy living through sustainable farming practices. 
+        Visitors can tour the farm, learn about composting and vermiculture and its importance to farming.<br><br>
+        5:00	Early dinner at one of the ancestral homes in Silay<br><br>
+
+	    <em>What to wear: Any comfortable clothes, bring sunblock and a hat.</em>
+
+	    <em>What to wear: Any comfortable clothes, bring sunblock and a hat.</em>
+        </p>
+        <a href="tours.html" class="btn">Back to Tours</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <p>&copy; 2025 T3 Centre Tours. All rights reserved.</p>
+  </footer>
+
+  <!-- Navbar Toggle Script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('nav ul');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
