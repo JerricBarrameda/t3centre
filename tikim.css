@@ -81,7 +81,7 @@ nav ul li a.acti {
 /* ===== Hero Section ===== */
 .hero {
   position: relative;
-  background: url('images/tour1.jpg') no-repeat center/cover;
+  background: url('images/tourhero.jpg') no-repeat center/cover;
   height: 50vh;
   display: flex;
   align-items: center;
