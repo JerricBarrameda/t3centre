@@ -82,7 +82,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   position: relative;
-  background: url('images/heroimage2.jpg') no-repeat center center/cover;
+  background: url('images/heroimage2.jpeg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
