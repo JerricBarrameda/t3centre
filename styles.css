@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Meldina', cursive, sans-serif;
 }
 
 @font-face {
@@ -74,7 +74,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Meldina', cursive, sans-serif;
   text-decoration: none;
   color: white;
   font-weight: 500;
